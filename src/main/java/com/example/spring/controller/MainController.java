@@ -80,6 +80,9 @@ public class MainController {
 
                 message.setFilename(resultFilename);
             }
+
+            model.addAttribute("message", null);
+
             messageRepo.save(message);
         }
 
