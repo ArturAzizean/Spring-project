@@ -4,7 +4,7 @@ mvn clean package
 
 echo 'Copy files...'
 
-scp ssh -i ~/.ssh/spring-art.pem \
+scp -i ~/.ssh/spring-art.pem \
     target/spring-1.0-SNAPSHOT.jar \
     ubuntu@34.222.56.10:/home/ubuntu/
 
